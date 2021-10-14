@@ -1,0 +1,4 @@
+sealed abstract class Vehicule[T]{}
+case class Voiture[T](marque : T, modele : T, boite_vitesse : T) extends Vehicule[T]{}
+case class Moto[T](marque : T, modele : T, nbroues : 2) extends Vehicule[T]{}
+case class Bateau[T](marina : T, modele : T) extends Vehicule[T]{}
